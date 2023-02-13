@@ -1,5 +1,5 @@
-near-blank-project
-==================
+near-rust-fundraising-contract
+==============================
 
 This app was initialized with [create-near-app]
 
@@ -98,3 +98,16 @@ On Windows, if you're seeing an error containing `EPERM` it may be related to sp
   [NEAR Wallet]: https://wallet.testnet.near.org/
   [near-cli]: https://github.com/near/near-cli
   [gh-pages]: https://github.com/tschaub/gh-pages
+
+Screenshots
+===========
+
+<img src='./Fund1.png' margin='0 auto' width='100%' height='auto'/>
+<img src='./Fund2.png' margin='0 auto' width='100%' height='auto'/>
+<img src='./Fund3.png' margin='0 auto' width='100%' height='auto'/>
+<img src='./Fund4.png' margin='0 auto' width='100%' height='auto'/>
+<img src='./Fund5_Pledge1.png' margin='0 auto' width='100%' height='auto'/>
+<img src='./Fund6_Pledge2.png' margin='0 auto' width='100%' height='auto'/>
+<img src='./Fund6_Pledge3.png' margin='0 auto' width='100%' height='auto'/>
+<img src='./Fund6_Pledge4.png' margin='0 auto' width='100%' height='auto'/>
+<img src='./Fund6_Pledge5.png' margin='0 auto' width='100%' height='auto'/>
