@@ -23,12 +23,12 @@ impl Contract {
     
     #[init]
     #[private]
-    pub fn init(fundraiserInit: AccountId) -> Self {
+    pub fn init(fundraiser_init: AccountId) -> Self {
 
         assert!(!env::state_exists(), "Already initialized");
 
         Self {
-            fundraiser: fundraiserInit,
+            fundraiser: fundraiser_init,
             pledges: UnorderedMap::new(b"p")
         }
 
