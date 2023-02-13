@@ -1,5 +1,5 @@
 use near_sdk::borsh::{self, BorshDeserialize, BorshSerialize};
-use near_sdk::{log, near_bindgen, AccountId};
+use near_sdk::{near_bindgen, AccountId, env};
 use near_sdk::collections::UnorderedMap;
 
 #[near_bindgen]
@@ -21,4 +21,16 @@ impl Default for Contract{
 #[near_bindgen]
 impl Contract {
     
+    #[init]
+    #[private]
+    pub fn init(fundraiserInit: AccountId) -> Self {
+
+        assert!(!env::state_exists(), "Already initialized");
+
+        Self {
+            fundraiser: fundraiserInit,
+            pledges: UnorderedMap::new(b"p")
+        }
+
+    }
 }
