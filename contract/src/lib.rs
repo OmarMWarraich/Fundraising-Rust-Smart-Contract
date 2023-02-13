@@ -31,6 +31,14 @@ impl Contract {
             fundraiser: fundraiser_init,
             pledges: UnorderedMap::new(b"p")
         }
+    }
 
+    pub fn get_fundraiser(&self) -> AccountId {
+        self.fundraiser.clone()
+    }
+
+    #[private]
+    pub fn set_fundraiser(&mut self, fundraiser_new: AccountId) {
+        self.fundraiser = fundraiser_new;
     }
 }
